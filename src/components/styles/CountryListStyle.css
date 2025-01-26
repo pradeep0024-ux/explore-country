@@ -1,0 +1,76 @@
+/* Parent container with background and padding */
+.country-list-container {
+    background: linear-gradient(135deg, #e9f4ff, #fdfdfd);
+    padding: 20px;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Title styling */
+  .title {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Search box container */
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+  
+  /* Search box styling */
+  .search-box {
+    width: 300px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .search-box:focus {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-color: #007bff;
+  }
+  
+  /* Search icon styling */
+  .search-icon {
+    font-size: 24px;
+    color: #007bff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Grid layout for the list of cards */
+  .list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* No data text */
+  .no-data {
+    text-align: center;
+    color: #888;
+    font-size: 24px;
+    margin-top: 50px;
+  }
+  .clear-filter {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
