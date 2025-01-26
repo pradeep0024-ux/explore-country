@@ -14,8 +14,8 @@ function CountryList() {
   const fetchCountry = async () => {
     const response = await fetch("https://restcountries.com/v3.1/all");
     const data = await response.json();
-    setCountries(data.slice(0, 50)); 
-    setFiltered(data.slice(0, 50));
+    setCountries(data); 
+    setFiltered(data);
     setVisibleCountries(data.slice(0, itemsPerPage)); 
   };
 
